@@ -228,9 +228,9 @@ function App() {
     <div>
       <Container>
         <Row>
-          {Homeitems.map((bedcovers) => {
+          {Homeitems.map((bedcovers, i) => {
             return (
-              <Col className="col-4">
+              <Col className="col-4" key={i}>
                 <Card
                   className="my-3 mx-4"
                   style={{
